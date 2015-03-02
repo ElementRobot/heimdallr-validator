@@ -1,0 +1,45 @@
+{
+  "name": "heimdallr-validator",
+  "version": "0.0.0",
+  "description": "Validates Heimdallr packets.",
+  "homepage": "https://heimdallr.skyforge.co",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElementRobot/heimdallr-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElementRobot/heimdallr-validator/issues"
+  },
+  "contributors": [
+    {
+      "name": "John Feusi",
+      "email": "jf@elementrobot.com"
+    },
+    {
+      "name": "Jon Staab",
+      "email": "staab@elementrobot.com"
+    },
+    {
+      "name": "Chris Walker",
+      "email": "cw@elementrobot.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "heimdallr",
+    "rtc",
+    "websockets"
+  ],
+  "dependencies": {
+    "chai-json-schema": "^1.1.0",
+    "gulp": "^3.8.11",
+    "jsdoc": "^3.3.0-beta1"
+  },
+  "devDependencies": {
+    "replace": "^0.3.0"
+  }
+}
