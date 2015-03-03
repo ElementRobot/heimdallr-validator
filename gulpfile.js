@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    mocha = require('gulp-mocha'),
     fs = require('fs'),
     path = require('path'),
     exec = require('child_process').exec,
@@ -7,9 +8,14 @@ var gulp = require('gulp'),
     jsdocConfPath = './docs/conf.json',
     jsdocConf = require(jsdocConfPath);
 
-gulp.task('default', ['docs'], function(){
+gulp.task('default', ['tests', 'docs'], function(){
     // Hack because gulp wasn't exiting
     setTimeout(process.exit.bind(0));
+});
+
+gulp.task('tests', function tests(){
+    return gulp.src('./tests/test.js', {read: false})
+        .pipe(mocha());
 });
 
 gulp.task('docs', function docs(cb) {
@@ -36,6 +42,6 @@ gulp.task('docs', function docs(cb) {
     });
 });
 
-gulp.watch(['./lib', 'README.md'], ['docs']);
+gulp.watch(['./lib', 'README.md'], ['tests', 'docs']);
 
 
