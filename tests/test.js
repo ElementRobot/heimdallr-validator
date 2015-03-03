@@ -1,6 +1,6 @@
 var Mocha = require('mocha'),
     assert = require('chai').assert,
-    validator = require('../lib/heimdallr-validator'),
+    validator = require('../index.js'),
     ts = (new Date()).toISOString(),
     validUUID = 'f52b68f5-4f96-4be2-bf6b-3c78fd29c76d',
     testPackets = {

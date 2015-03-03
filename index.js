@@ -1,1 +1,1 @@
-module.exports = ('./lib/heimdallr-validator.js');
+module.exports = require('./lib/heimdallr-validator.js');
