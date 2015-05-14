@@ -35,8 +35,8 @@
     "websockets"
   ],
   "dependencies": {
-    "chai-json-schema": "^1.1.0",
-    "debug": "^2.1.2"
+    "debug": "^2.1.2",
+    "tv4": "^1.1.9"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
