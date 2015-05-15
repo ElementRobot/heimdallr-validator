@@ -39,8 +39,10 @@
     "tv4": "^1.1.9"
   },
   "devDependencies": {
+    "chai": "^2.3.0",
     "gulp": "^3.8.11",
     "gulp-mocha": "^2.0.0",
+    "highland": "^2.5.0",
     "jsdoc": "^3.3.0-beta1",
     "mocha": "^2.1.0",
     "replace": "^0.3.0"

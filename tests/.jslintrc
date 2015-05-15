@@ -1,0 +1,10 @@
+{
+    "plusplus": true,
+    "predef": [
+        "describe",
+        "beforeEach",
+        "afterEach",
+        "it"
+    ],
+    "unparam": true
+}
